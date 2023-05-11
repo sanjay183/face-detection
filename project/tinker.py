@@ -31,7 +31,7 @@ def upload():
     uploaded_file = request.files['file']
 
     # Save the uploaded file to a temporary location
-    image_path = 'temp.jpg'
+    image_path = 'value.jpg'
     uploaded_file.save(image_path)
 
     # Load the image using OpenCV

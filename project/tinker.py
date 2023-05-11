@@ -31,7 +31,7 @@ def upload():
     uploaded_file = request.files['file']
 
     # Save the uploaded file to a temporary location
-    image_path = 'value.jpg'
+    image_path = 'temp.jpg'
     uploaded_file.save(image_path)
 
     # Load the image using OpenCV
@@ -40,8 +40,9 @@ def upload():
     # Perform face detection
     output_image = detect_faces(image)
 
+    cv2.imshow(output_image)
     # Display the output image
-    output_path='static/image_name.jpg'
+    output_path='project/static/image_name.jpg'
     cv2.imwrite(output_path, output_image)
 
     return render_template('result.html')

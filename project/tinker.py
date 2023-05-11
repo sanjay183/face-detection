@@ -41,7 +41,8 @@ def upload():
     output_image = detect_faces(image)
 
     # Display the output image
-    cv2.imwrite('static/output.jpg', output_image)
+    output_path='static/image_path.jpg'
+    cv2.imwrite(output_path, output_image)
 
     return render_template('result.html')
 

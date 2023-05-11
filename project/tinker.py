@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 def detect_faces(image):
     # Load pre-trained face detection model
-    face_cascade = cv2.CascadeClassifier('C:/Users/sanjay/OneDrive/Desktop/haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('project/haarcascade_frontalface_default.xml')
 
     # Convert the image to grayscale
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

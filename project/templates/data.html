@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Detection</title>
+</head>
+<body>
+    <h1>Upload an Image for Face Detection</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Detect Faces</button>
+    </form>
+</body>
+</html>

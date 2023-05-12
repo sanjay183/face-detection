@@ -29,7 +29,7 @@ def index():
 def upload():
     # Retrieve the uploaded file
     uploaded_file = request.files['file']
-
+    print("uploaded file:",uploaded_file)
     # Save the uploaded file to a temporary location
     image_path = 'temp.jpg'
     uploaded_file.save(image_path)
@@ -44,7 +44,7 @@ def upload():
     # Display the output image
     output_path='static/image_name.jpg'
     cv2.imwrite(output_path, output_image)
-
+     print('output path is:',output_path)
     return render_template('result.html')
 
 if __name__ == '__main__':

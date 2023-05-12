@@ -2,12 +2,6 @@
 from flask import Flask, render_template, request
 import cv2
 import os
-import logging
-from flask.logging import default_handler
-
-app.logger.removeHandler(default_handler)
-app.logger.setLevel(logging.DEBUG)
-app.logger.addHandler(logging.StreamHandler())
 
 app = Flask(__name__)
 

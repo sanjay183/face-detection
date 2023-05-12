@@ -44,7 +44,7 @@ def upload():
     # Display the output image
     output_path='static/image_name.jpg'
     cv2.imwrite(output_path, output_image)
-     print('output path is:',output_path)
+    print('output path is:',output_path)
     return render_template('result.html')
 
 if __name__ == '__main__':

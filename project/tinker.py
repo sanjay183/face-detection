@@ -42,7 +42,7 @@ def upload():
     
     
     # Display the output image
-    output_path='static/image_name.jpg'
+    output_path='static/DSC_0252.JPG'
     cv2.imwrite(output_path, output_image)
 
     return render_template('result.html')

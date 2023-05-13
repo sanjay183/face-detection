@@ -95,7 +95,7 @@ def upload():
     output_image = detect_faces(image)
 
     # Save the output image
-    output_path = 'static/DSC_0252.JPG'
+    output_path = 'project/static/DSC_0252.JPG'
     cv2.imwrite(output_path, output_image)
 
     # Save the output image to GitHub

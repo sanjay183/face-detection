@@ -99,7 +99,7 @@ def upload():
     cv2.imwrite(output_path, output_image)
 
     # Save the output image to GitHub
-    access_token = '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'  # Replace with your GitHub access token
+    access_token = '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'  # Replace with your GitHub access token
     repository_name = 'face-detection'  # Replace with your GitHub repository name
     branch_name='main'
     username='sanjay183'

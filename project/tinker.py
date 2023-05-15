@@ -100,9 +100,9 @@ def upload():
 
     # Save the output image to GitHub
     access_token = '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'  # Replace with your GitHub access token
-    repository_name = 'sanjay183/face-detection'  # Replace with your GitHub repository name
+    repository_name = 'face-detection'  # Replace with your GitHub repository name
     branch_name='main'
-    
+    username='sanjay183'
     g = Github(access_token)
     repo = g.get_user().get_repo(repository_name)
     with open(output_path, 'rb') as file:
